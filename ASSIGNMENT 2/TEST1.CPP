@@ -39,6 +39,37 @@ void prime(int a)
 
 
 3. Define a function to calculate x raised to the power y.
+    #include <iostream>
+
+using namespace std;
+int fun(int a,int b);
+int main()
+{
+   int x,y;
+   cout<<"enter the value of x or base value";
+   cin>>x;
+   cout<<"enter the value of y or exponential";
+   cin>>y;
+   fun(x,y);
+}
+int fun(int a,int b)
+{
+    if(b>=2)
+    {
+        int i,z;
+        z=a;
+        for(i=1;i<b;i++)
+        {
+            z=z*a;
+        }
+        cout<<"The result of "<<a<<" to the power "<<b<<" is = "<<z;
+    }
+    else
+    {
+        cout<<"the result is =" <<a;
+    }
+}
+
 
 
 
